@@ -197,6 +197,20 @@ header .container {
     flex-basis: calc((100%-72px)/4);
 }
 
+
+.desc-icon {
+    background-color: var(--color-cloud);
+    padding: 24px 100px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.desc-svg{
+    
+    fill: green;
+    color: red;
+}
+
+
 .desc-title {
     font-weight: 700;
     font-size: 20px;
