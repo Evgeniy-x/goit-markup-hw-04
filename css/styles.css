@@ -139,6 +139,13 @@ header .container {
 
 .hero-section {
     background-color: var(--color-title);
+    
+    background-image: linear-gradient(to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/hero-people.jpg);
+
+    background-size: cover;
+    max-width: 1600px;
     padding: 192px 0;
 }
 
@@ -309,7 +316,91 @@ header .container {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--color-text);
+    margin-bottom: 8px;
 }
+
+.team-svg-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    
+}
+
+.team-svg-item {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-logo);
+    border-radius: 50%;
+    color: var(--color-cloud);
+    
+}
+
+.team-svg-item:hover {
+    background-color: #31D0AA;
+}
+
+.team-svg-item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.team-svg-icon {
+    fill: var(--color-cloud);
+}
+
+
+
+/* Customers */
+
+.customers-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-title);
+    margin-bottom: 72px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+
+.customers-item {
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    color: #8E8F99;
+}
+
+.customers-item:hover {
+    color: var(--color-logo);
+    border: 1px solid var(--color-logo);
+}
+
+.customers-item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: currentColor;
+}
+
+.customers-icon {
+    fill: currentColor;
+}
+
+
+
+
+
 
 
 /* Portfolio */
@@ -400,6 +491,10 @@ header .container {
     padding: 100px 0;
 }
 
+.footer-container {
+    display: flex;
+}
+
 .logo-footer {
     color: var(--color-cloud);
 
@@ -412,4 +507,45 @@ header .container {
     color: var(--color-cornflower);
     width: 265px;
     margin-top: 16px;
+}
+
+.footer-media {
+    margin-left: 120px;
+}
+
+.footer-media-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-primary);
+    margin-bottom: 16px;
+}
+
+.footer-media-list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-media-item {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-media-item:hover {
+    background: #31D0AA;
+}
+
+.footer-media-item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-media-icon {
+    fill: var(--color-cloud);
 }
